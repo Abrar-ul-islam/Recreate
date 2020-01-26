@@ -1,0 +1,246 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(to right , 
+    rgb(97, 235, 97) ,
+    rgb(95, 119, 226));
+    padding: 1rem 5rem 0 5rem; 
+    color:#999;
+}
+
+
+.wrapper{
+    /* Try to Remove the Background color and see what happen  */
+    height: 65rem;
+    background-color: #fff;
+    border-radius: 5px;
+    color:#999;
+    padding: 0 3rem;
+
+}
+
+/* ------------------------------------------------------- Navigation --------------------------------------------------------------- */
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 1rem;
+    
+}
+
+.navigation .navigation__logo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    transition: all .2s ;
+}
+
+.navigation .navigation__logo a{
+    text-decoration: none;
+    color: rgb(116, 50, 240);
+
+}
+
+.navigation .navigation__logo:hover{
+    transform: scale(1.1) skew(7deg);
+    cursor: pointer;
+    
+}
+
+.navigation__list{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.navigation__link:link, .navigation__link:visited{
+    font-weight: 300;
+    padding: 1rem 2.5rem;
+    display: inline-block; 
+    text-decoration: none;
+    color: rgb(75, 64, 64);
+    background-image: linear-gradient(115deg, transparent 0%,  transparent 50% , rgb(56, 231, 49) 50%);
+    background-size: 230%;
+    transition: all .5s;
+}
+
+
+.navigation__link:hover,
+.navigation__link:active{
+    background-position: 100%;
+    transform: translateX(1rem);    
+    color: #fff;
+    border-radius: 5px;
+}
+
+.navigation__contact{
+    color: rgb(75, 64, 64);
+}
+
+
+/* ------------------------------------------------------- Header Section ---------------------------------------------------------------*/
+.header{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+    padding-top: 2rem;
+}
+
+.header__left{
+    padding-top: 2rem;
+}
+
+.primary__heading{
+    color: #000;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.header__text{
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+
+.btn:link,
+.btn:visited{
+    display: inline-block;
+    padding: 1.2rem 1.8rem;
+    text-decoration: none;
+    transition: all .3s;
+}
+
+.btn:not(:last-child){
+    margin-right: 4rem;
+}
+
+.btn--purple{
+    background-color: purple;
+    color: #fff;
+}
+
+.btn--purple:hover{
+    transform: translateY(-.3rem);
+
+}
+.btn--grey{
+    color: #777;
+    font-size: 1.4rem;
+    background-image: linear-gradient(115deg,
+    transparent 0%,  transparent 50% ,
+    rgb(56, 231, 49) 50%);
+    background-size: 230%;
+}
+
+.btn--grey:hover{
+    background-position: 100%;
+    transform: translateX(.4rem);
+    color: #fff;
+}
+
+
+.header__right{
+    position: relative;
+}
+
+.header__img{
+    float: right;
+    width: 80%;
+    height: 32rem;
+    border-radius: 5px;
+}
+
+.header__icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: rgb(90, 117, 206);
+    border-radius: 5px;
+    position: absolute;
+    top: 40%;
+    left: 16.7%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding-top: .4rem;
+}
+
+.header__rating-box{
+    background-color: whitesmoke;
+    display: inline-block;
+    width: 42%;
+    padding: 1rem 1.4rem;
+    position: absolute;
+    bottom: .5rem;
+    left: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1rem 2rem #000;
+}
+
+.rating__points{
+    color: #000;
+    font-size: 1.6rem;
+    font-weight: 400; 
+}
+
+.rating__text{
+    margin-top: .5rem;
+}
+
+.rating-icon{
+    height: 2.5rem;
+    width: 2.5rem;
+    background-color: purple;
+    border-radius: 5px;
+    position: absolute;
+    top: -1rem;
+    right: -1rem;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding-top: .4rem;
+}
+
+
+
+/* ------------------------------------------------------- Clients Section --------------------------------------------------------------- */
+
+.clients{
+    margin-top: 5rem;
+    padding: 0 2rem;
+}
+
+.clients__heading{
+    text-align: center;
+    color: purple;
+    text-transform: uppercase;
+    margin-bottom: 5rem;  
+    font-size: 3rem;
+    transform: rotate(-2deg);
+}
+
+.clients__icon{
+    font-size: 1.5rem;
+    padding-left: 2rem;
+    font-size: 3rem;
+
+}
+
+.clients__item{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    color: rgb(82, 76, 74);
+    padding: 1.5rem;
+    font-size: 1.4rem;
+    background-image: linear-gradient(to right , rgb(24, 212, 65) , rgb(31, 193, 221));
+}
+
+
+
